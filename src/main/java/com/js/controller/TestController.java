@@ -18,7 +18,6 @@ public class TestController {
     @RequestMapping("/other.do")
     public ModelAndView doOther(){
         ModelAndView mv=new ModelAndView();
-        System.out.println(mv);
         return mv;
     }
 }
