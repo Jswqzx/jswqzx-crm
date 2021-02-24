@@ -2,6 +2,7 @@ package com.js.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.UUID;
 
@@ -12,5 +13,12 @@ public class TestController {
     public void doSome(){
         UUID uuid=UUID.randomUUID();
         System.out.println(uuid);
+    }
+
+    @RequestMapping("/other.do")
+    public ModelAndView doOther(){
+        ModelAndView mv=new ModelAndView();
+        System.out.println(mv);
+        return mv;
     }
 }
