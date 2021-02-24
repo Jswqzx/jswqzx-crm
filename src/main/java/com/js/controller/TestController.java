@@ -18,7 +18,7 @@ public class TestController {
     @RequestMapping("/other.do")
     public ModelAndView doOther(){
         ModelAndView mv=new ModelAndView();
-        mv.addObject("msg","Test");
+        mv.addObject("msg","Js");
         return mv;
     }
 }
